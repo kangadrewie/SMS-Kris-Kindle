@@ -3,8 +3,8 @@ import re
 from copy import copy
 from twilio.rest import Client
 
-twilio_sid = 'ACdd5f742b193e8499d45cab30e79939b5'
-auth_token = 'b3af2a7cf439c507b2a77bbd47a272f8'
+twilio_sid = ''
+auth_token = ''
 
 client = Client(twilio_sid, auth_token)
 
@@ -44,6 +44,6 @@ def krisKindle(names, draw):
     return matches
     smsMessage(toGet, toReceive)
 
-names = [ 'Andrew +353857776581', 'Jonathan +353879015665', 'Robert +353851509909', 'Patrick +353838330479', 'Pat +353872891555', 'Breda +353851276484']
+names = [ 'Andrew +35312345678', 'Jonathan +35312345678', 'Robert +35312345678', 'Patrick +35312345678', 'Pat +35312345678', 'Breda +353851276484']
 
 krisKindle(names,copy(names))
